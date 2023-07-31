@@ -27,6 +27,20 @@ public class Program {
 		//Recebe input e atribui ao tax da classe Employee
 		System.out.println("Tax: ");
 		employee.tax = sc.nextDouble();
+		sc.nextLine();
+		
+		//Recebe input e atribui ao ageEmployee da classe Employee 
+		System.out.println("Age: ");
+		employee.ageEmployee = sc.nextInt();
+		sc.nextLine();
+		
+		//Recebe input e atribui ao functionEmployee da classe Employee
+		System.out.println("Function: ");
+		employee.functionEmployee = sc.nextLine();
+		
+		//Recebe input e atribui ao admissionDate da classe Employee
+		System.out.println("Admission Date: ");
+		employee.admissionDate = sc.nextLine();
 		
 		//Retorna os dados atualizados da classe Employee após input
 		employee.showEmployeeData();
@@ -37,7 +51,8 @@ public class Program {
 		employee.increaseSalary(percentage);
 		
 		//Retorna os dados atualizados após aumento do salário bruto
-		employee.showEmployeeData();	
+		System.out.printf("Updated Data: ");
+		employee.showEmployeeData();
 		
 		sc.close();
 

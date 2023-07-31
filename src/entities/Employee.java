@@ -8,7 +8,7 @@ public class Employee {
 	public double tax;
 	public int ageEmployee;
 	public String functionEmployee;
-	public String adnissionDate;
+	public String admissionDate;
 	
 	//Criando método netSalary
 	
@@ -25,7 +25,13 @@ public class Employee {
 	}
 	
 	public void showEmployeeData() {
-		System.out.printf("Employee: %s, R$%.2f%n", nameEmployee, netSalary());
+		System.out.printf("Employee: %s, "
+				+ "Salary: R$%.2f, "
+				+ "Age: %d, "
+				+ "Function: %s, "
+				+ "Admission "
+				+ "Date: %s%n", 
+				nameEmployee, netSalary(), ageEmployee, functionEmployee, admissionDate);
 	}
 
 }
