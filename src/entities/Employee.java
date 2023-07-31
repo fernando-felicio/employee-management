@@ -14,6 +14,10 @@ public class Employee {
 		return netSalary;
 	}
 	
+	//Criando método increaseSalary
 	
+	public void increaseSalary(double percentage) {
+		this.grossSalary =+ percentage;
+	}
 
 }
