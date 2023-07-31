@@ -36,7 +36,8 @@ public class Program {
 		double percentage = sc.nextDouble();
 		employee.increaseSalary(percentage);
 		
-		employee.showEmployeeData();
+		//Retorna os dados atualizados após aumento do salário bruto
+		employee.showEmployeeData();	
 		
 		sc.close();
 
