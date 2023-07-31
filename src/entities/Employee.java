@@ -6,6 +6,9 @@ public class Employee {
 	public String nameEmployee;
 	public double grossSalary;
 	public double tax;
+	public int ageEmployee;
+	public String functionEmployee;
+	public String adnissionDate;
 	
 	//Criando método netSalary
 	
