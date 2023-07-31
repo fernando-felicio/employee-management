@@ -3,9 +3,9 @@ package entities;
 public class Employee {
 	
 	//Declarando atributos da classe Employee
-	String nameEmployee;
-	double grossSalary;
-	double tax;
+	public String nameEmployee;
+	public double grossSalary;
+	public double tax;
 	
 	//Criando método netSalary
 	
@@ -18,6 +18,10 @@ public class Employee {
 	
 	public void increaseSalary(double percentage) {
 		this.grossSalary =+ percentage;
+	}
+	
+	public void showEmployeeData() {
+		System.out.printf("Employee: %s, R$%.2f", nameEmployee, netSalary());
 	}
 
 }
