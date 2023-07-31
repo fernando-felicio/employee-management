@@ -3,7 +3,7 @@ package entities;
 public class Employee {
 	
 	//Declarando atributos da classe Employee
-	String name;
+	String nameEmployee;
 	double grossSalary;
 	double tax;
 	
