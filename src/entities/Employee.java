@@ -17,11 +17,12 @@ public class Employee {
 	//Criando método increaseSalary
 	
 	public void increaseSalary(double percentage) {
-		this.grossSalary =+ percentage;
+		percentage =+ (grossSalary * percentage / 100);
+		grossSalary += percentage;
 	}
 	
 	public void showEmployeeData() {
-		System.out.printf("Employee: %s, R$%.2f", nameEmployee, netSalary());
+		System.out.printf("Employee: %s, R$%.2f%n", nameEmployee, netSalary());
 	}
 
 }

@@ -28,6 +28,16 @@ public class Program {
 		System.out.println("Tax: ");
 		employee.tax = sc.nextDouble();
 		
+		//Retorna os dados atualizados da classe Employee após input
+		employee.showEmployeeData();
+		
+		//Input que atribui a porcentagem de aumento do salário
+		System.out.println("Wich percentage to increase salary? ");
+		double percentage = sc.nextDouble();
+		employee.increaseSalary(percentage);
+		
+		employee.showEmployeeData();
+		
 		sc.close();
 
 	}
